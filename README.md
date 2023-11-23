@@ -12,7 +12,7 @@
 cd node_js
 ```
 
-3. Execute o arquivo .js usando o comando `node ./nome_do_arquivo.js`, Por exemplo:
+3. Execute o arquivo .js usando o comando `node ./src/nome_do_arquivo.js`, Por exemplo:
 
 ```bash
 node ./src/01.js
