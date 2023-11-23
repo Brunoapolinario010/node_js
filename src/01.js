@@ -2,10 +2,19 @@ const readline = require('readline');
 
 function somatorio(n) {
   let soma = 0;
-  for (let i = 0; i < n; i++) {
-    if (i % 3 === 0 || i % 5 === 0) soma += i;
+
+  n = parseInt(n);
+
+  if(isNaN(n)) return 'O valor informado deve ser um número';
+  if(n < 0) return 'O valor informado deve ser positivo';
+  if(n === 0) return soma;
+  
+  if(typeof n === 'number') {
+    for (let i = 0; i < n.toFixed(0); i++) {
+      if (i % 3 === 0 || i % 5 === 0) soma += i;
+    }
+    return soma;
   }
-  return soma;
 }
 
 let node = readline.createInterface({
